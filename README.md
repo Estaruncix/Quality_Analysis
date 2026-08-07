@@ -10,7 +10,7 @@ This project simulates an end-to-end quality data workflow: raw lab test results
 
 It was built to demonstrate the specific skill set required for a **Quality Data and Systems** role: supporting a connected, digital quality ecosystem for global laboratory operations, including data integrity, traceability, and dashboarding for real-time insight into lab performance.
 
-While enterprise platforms (SAP QM, LIMS) aren't accessible outside a corporate environment, this project reproduces the same underlying data problem those systems solve — structuring raw test results into reliable, auditable quality decisions — using accessible tools (Excel, Power Query, Power BI).
+While enterprise platforms (SAP QM, LIMS) aren't accessible outside a corporate environment, this project reproduces the same underlying data problem those systems solve structuring raw test results into reliable, auditable quality decisions using accessible tools (Excel, Power Query, Power BI).
 
 ## 2. Data Source
 
@@ -18,7 +18,7 @@ While enterprise platforms (SAP QM, LIMS) aren't accessible outside a corporate 
 
 Field structure and parameter types (purity, moisture content, pH, density, microbial count, residual solvent, particle size) were grounded against a peer-reviewed, publicly available industrial pharmaceutical manufacturing quality dataset, to keep the simulated data structurally realistic rather than arbitrary.
 
-The raw export was deliberately generated with realistic messiness — inconsistent site-name spelling, mixed date formats, missing results, and duplicate rows — to give the cleaning stage genuine work to do, rather than starting from an already-tidy table.
+The raw export was deliberately generated with realistic messiness — inconsistent site-name spelling, mixed date formats, missing results, and duplicate rows to give the cleaning stage genuine work to do, rather than starting from an already-tidy table.
 
 ## 3. Methodology
 
@@ -45,25 +45,21 @@ This was implemented two ways for cross-validation: as an Excel formula (`COUNTI
 
 The report is organized across pages:
 
-- **Overview** — KPI cards (Total Batches, Batch Pass Rate %, Total Tests, Test Fail Rate %) and a combined monthly view of pass rate against batch volume, to avoid a normalized rate hiding underlying volume changes.
-- **Site & Product Breakdown** — pass rate compared across lab sites and product lines.
-- **Failure Analysis** — a Pareto chart ranking which test parameter drives the most failures, with a cumulative-percentage line.
+- **Overview**: KPI cards (Total Batches, Batch Pass Rate %, Total Tests, Test Fail Rate %) and a combined monthly view of pass rate against batch volume, to avoid a normalized rate hiding underlying volume changes.
+- **Site & Product Breakdown**: pass rate compared across lab sites and product lines.
+- **Failure Analysis**: a Pareto chart ranking which test parameter drives the most failures, with a cumulative-percentage line.
 
 Site, Product Line, and date-range slicers are present on each page and synced, so a selection made on one page carries across the report.
 
 ## 4. Dashboard Screenshots
 
-> Add your final exported screenshots to an `/images` folder in this repo and reference them below, e.g.:
->
-> `![Overview page](images/overview.png)`
-> `![Site & Product Breakdown](images/site_product_breakdown.png)`
-> `![Failure Analysis](images/failure_analysis.png)`
 
-![Overview page](images/overview.png)
 
-![Site & Product Breakdown](images/site_product_breakdown.png)
+![Overview page](Images/overview.png)
 
-![Failure Analysis](images/failure_analysis.png)
+![Site & Product Breakdown](Images/site_product_breakdown.png)
+
+![Failure Analysis](Images/failure_analysis.png)
 
 ## 5. Relevance to SAP QM & LIMS Workflows
 
