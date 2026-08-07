@@ -55,7 +55,7 @@ Site, Product Line, and date-range slicers are present on each page and synced, 
 
 
 
-![Overview page](Images/overview.png)
+![Overview page](Images/Overview.png)
 
 ![Site & Product Breakdown](Images/site_product_breakdown.png)
 
@@ -65,9 +65,9 @@ Site, Product Line, and date-range slicers are present on each page and synced, 
 
 This project does not use SAP QM or a commercial LIMS platform — both are licensed enterprise systems not accessible outside a corporate environment. It does, however, model the same underlying data pattern those systems are built around:
 
-- **LIMS** generates raw, sample-level test results as they come off lab instruments — represented here by the raw synthetic export.
-- **SAP QM** consumes structured quality data to make batch/inspection-lot release decisions — represented here by the batch-level pass / fail / pending roll-up.
-- **Dashboards / BI tools** sit on top of both, giving quality teams visibility into trends and failure drivers — represented here by the Power BI report.
+- **LIMS** generates raw, sample-level test results as they come off lab instruments represented here by the raw synthetic export.
+- **SAP QM** consumes structured quality data to make batch/inspection-lot release decisions represented here by the batch-level pass / fail / pending roll-up.
+- **Dashboards / BI tools** sit on top of both, giving quality teams visibility into trends and failure drivers represented here by the Power BI report.
 
 The goal of this project was to demonstrate fluency with that data flow and the analytical thinking it requires, using tools available outside a corporate license — not to claim direct SAP QM or LIMS platform experience.
 
@@ -93,7 +93,6 @@ See [`Findings_Memo_Lab_Quality_KPI.pdf`](Findings_Memo_Lab_Quality_KPI.pdf) for
 ## References
 
 [^1]: [Nature Scientific Data — pharmaceutical manufacturing quality dataset](https://www.nature.com/articles/s41597-022-01203-x)
-
 ---
 
 **Author:** David Mullor Tomas — [mullortomasd@gmail.com](mailto:mullortomasd@gmail.com)
